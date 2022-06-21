@@ -9,7 +9,7 @@ import { UseRef } from "./pages/UseRef";
 const App = () => {
   return (
     <>
-      {/* <Intro />
+      <Intro />
       <br></br>
       <UseReducer />
       <br></br>
@@ -19,8 +19,8 @@ const App = () => {
       <br></br>
       <UseLayoutEffect />
       <br></br>
-      {/* For UseImperativeHandle *}
-      <Parent /> */}
+      {/* For UseImperativeHandle  */}
+      <Parent />
       <Context />
 
     </>

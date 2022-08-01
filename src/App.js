@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Intro from "./pages/Intro";
+import { Context } from "./pages/UseContext/Context";
+import { UseEffect } from "./pages/UseEffect";
+import { Parent } from "./pages/UseImperativeHandle/Parent";
+import { UseLayoutEffect } from "./pages/UseLayoutEffect";
+import { UseReducer } from "./pages/UseReducer";
+import { UseRef } from "./pages/UseRef";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Intro />
+      <br></br>
+      <UseReducer />
+      <br></br>
+      <UseEffect />
+      <br></br>
+      <UseRef />
+      <br></br>
+      <UseLayoutEffect />
+      <br></br>
+      {/* For UseImperativeHandle  */}
+      <Parent />
+      <Context />
+
+    </>
+  )
 }
 
 export default App;
